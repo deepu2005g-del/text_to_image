@@ -1,1 +1,1 @@
-# text_to_image
+Text-to-Image Generation 

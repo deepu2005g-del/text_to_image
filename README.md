@@ -67,7 +67,7 @@ text_to_image/
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/deepu2005g-del/text_to_image.git
+git clone https://github.com/username/repo.git
 
 cd text_to_image
 ```

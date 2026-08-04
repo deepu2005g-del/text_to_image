@@ -1,0 +1,26 @@
+.container{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#edf2f7;
+}
+
+.card{
+    width:700px;
+    background:white;
+    padding:40px;
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+}
+
+h1{
+    text-align:center;
+    color:#333;
+}
+
+p{
+    text-align:center;
+    color:#666;
+    margin-bottom:30px;
+}

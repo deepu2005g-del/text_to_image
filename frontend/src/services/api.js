@@ -1,8 +1,8 @@
 import axios from "axios";
 
-const API = "http://localhost:5000/generate";
+const API = "https://text-to-image-eh8f.onrender.com";
 
-export async function generateImage(prompt){
+export async function generateImage(prompt) {
 
     const response = await axios.post(
 
@@ -11,7 +11,7 @@ export async function generateImage(prompt){
         { prompt },
 
         {
-            responseType:"blob"
+            responseType: "blob"
         }
 
     );

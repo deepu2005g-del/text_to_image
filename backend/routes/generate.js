@@ -37,6 +37,10 @@ router.post("/", async (req, res) => {
 
         // Send image back to client
         res.setHeader("Content-Type", "image/png");
+        res.setHeader(
+            "Content-Disposition",
+            'inline; filename="generated.png"'
+        );
         res.send(response.data);
 
     } catch (error) {

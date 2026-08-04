@@ -2,16 +2,16 @@ function Loader(){
 
     return(
 
-        <h3
-        style={{
-            textAlign:"center",
-            marginTop:"30px"
-        }}
+        <div
+            style={{
+                marginTop:"20px",
+                textAlign:"center",
+                fontSize:"18px",
+                fontWeight:"bold"
+            }}
         >
-
             Generating...
-
-        </h3>
+        </div>
 
     );
 

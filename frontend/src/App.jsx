@@ -11,20 +11,38 @@ function App() {
   return (
     <div className="container">
 
-      <div className="card">
+      <div className="layout">
 
-        <h1>🎨 AI Text To Image</h1>
+        <div className="left-panel">
 
-        <p>Generate beautiful AI images from text</p>
+            <h1 className="title">
+                Text To Image Generator
+            </h1>
 
-        <PromptForm
-          setImage={setImage}
-          setLoading={setLoading}
-        />
+            <p className="subtitle">
+                Generate beautiful images from text
+            </p>
 
-        {loading && <Loader />}
+            <PromptForm
+                setImage={setImage}
+                setLoading={setLoading}
+            />
 
-        {image && <ImagePreview image={image} />}
+            {loading && <Loader />}
+
+        </div>
+
+        <div className="right-panel">
+
+            {image ? (
+                <ImagePreview image={image} />
+            ) : (
+                <div className="placeholder">
+                    Generated image will appear here
+                </div>
+            )}
+
+        </div>
 
       </div>
 

@@ -39,42 +39,22 @@ function PromptForm({setImage,setLoading}){
 
         <form onSubmit={handleSubmit}>
 
-            <input
+            <textarea
 
-            type="text"
+                className="input-box"
 
-            placeholder="Enter your prompt..."
+                placeholder="Enter your prompt..."
 
-            value={prompt}
+                value={prompt}
 
-            onChange={(e)=>setPrompt(e.target.value)}
-
-            style={{
-                width:"100%",
-                padding:"15px",
-                marginBottom:"20px",
-                borderRadius:"10px",
-                border:"1px solid #ccc"
-            }}
+                onChange={(e)=>setPrompt(e.target.value)}
 
             />
 
             <button
-
-            style={{
-                width:"100%",
-                padding:"15px",
-                background:"#2563eb",
-                color:"white",
-                border:"none",
-                borderRadius:"10px",
-                cursor:"pointer"
-            }}
-
+                className="generate-btn"
             >
-
                 Generate Image
-
             </button>
 
         </form>

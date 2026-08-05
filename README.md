@@ -1,4 +1,4 @@
-# Text-to-Image Generator
+live server : https://text-to-image-iota-brown.vercel.app/  # Text-to-Image Generator
 
 A simple full-stack AI Text-to-Image Generator built with **React**, **Node.js**, **Express**, and the **Clipdrop Text-to-Image API**. Users can enter a text prompt, generate an AI image, preview it, and download the generated image.
 
